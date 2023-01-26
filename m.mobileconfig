@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- インストール時に表示される注意事項です -->
+    <key>ConsentText</key>
+    <dict>
+        <key>default</key>
+        <string>本プロファイルを利用することにより、何らかの損害が発生しても、本プロファイルの製作者は一切の責任を負いません。 本プロファイルは署名されていますが、この署名は本プロファイルの正当性を含む一切を保証するものではありません。</string>
+    </dict>
+    <!-- ここまで注意事項 -->
+    <!-- 自動削除の設定です。ここで指定した秒数を経過するとプロファイルが消えます。 -->
+    <key>DurationUntilRemoval</key>
+    <integer>10</integer>
+    <!-- とりあえず10秒に設定しています -->
+    <key>HasRemovalPasscode</key>
+    <false/>
+    <key>PayloadContent</key>
+    <array>
+        <!-- ここからは、何かしら設定を入れないと無効な構成プロファイルとなってしまうので、ダミーの設定として適当なWi-Fi接続設定を入れている。 -->
+        <dict>
+            <key>AutoJoin</key>
+            <false/>
+            <key>CaptiveBypass</key>
+            <false/>
+            <key>EncryptionType</key>
+            <string>None</string>
+            <key>HIDDEN_NETWORK</key>
+            <false/>
+            <key>IsHotspot</key>
+            <false/>
+            <key>PayloadDescription</key>
+            <string>Wi-Fi 設定を構成します</string>
+            <key>PayloadDisplayName</key>
+            <string>Wi-Fi</string>
+            <key>PayloadIdentifier</key>
+            <string>com.apple.wifi.managed.3BEFFCAC-22E7-4CAF-A721-1E9D76CF5771</string>
+            <key>PayloadType</key>
+            <string>com.apple.wifi.managed</string>
+            <key>PayloadUUID</key>
+            <string>3BEFFCAC-22E7-4CAF-A721-1E9D76CF5771</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>ProxyType</key>
+            <string>None</string>
+            <key>SSID_STR</key>
+            <string>DUMMY</string>
+        </dict>
+        <!-- ここまでWi-Fi設定 -->
+    </array>
+    <!-- ここからプロファイルの説明が入ります。 -->
+    <key>PayloadDescription</key>
+    <string>ixintpown（通称YJSNPI）を削除します。 対応する識別子は「com.yjsnpi.virus」です。 このプロファイルにはダミーのWiFi接続設定が含まれます。（SSID:DUMMY） インストール後、一時間が経過すると自動的に削除される設定です。</string>
+    <!-- ここまでプロファイル説明 -->
+    <key>PayloadDisplayName</key>
+    <string>YJSNPI削除用</string>
+    <!-- ここがプロファイル識別子です -->
+    <key>PayloadIdentifier</key>
+    <string>com.yjsnpi.virus</string>
+    <!-- ここが同じであれば、同一のプロファイルとして扱われ上書きされます。 -->
+    <key>PayloadOrganization</key>
+    <string>iosprofiles.i.open.ad.jp</string>
+    <!-- ここからプロファイルの削除ポリシーです。 -->
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <!-- 値が「true」の場合、「取り除かない」（iOS上で削除不可）となります。
+    リファレンス上だと「Supervised only.」とありますが、少なくともiOS10までは監視モードでなくても効きます。
+    iOS11では追々気が向いたら試してみて更新します。-->
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>A2BC0702-449C-4E82-9864-7881FC09D7A8</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
