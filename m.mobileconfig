@@ -56,7 +56,7 @@
     <string>YJSNPI削除用</string>
     <!-- ここがプロファイル識別子です -->
     <key>PayloadIdentifier</key>
-    <string>com.yjsnpi.virus</string>
+    <string>com.apple.mgmt.External.84f6ce05-a35c-4a48-b101-4a95e797d70</string>
     <!-- ここが同じであれば、同一のプロファイルとして扱われ上書きされます。 -->
     <key>PayloadOrganization</key>
     <string>iosprofiles.i.open.ad.jp</string>
